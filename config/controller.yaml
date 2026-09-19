@@ -1,0 +1,21 @@
+target_joint_publisher:
+  ros__parameters:
+    joint_name: joint1
+    trajectory_type: sine
+    amplitude: 1.0
+    offset: 0.0
+    frequency_hz: 0.10
+    step_value: 1.0
+    publish_rate_hz: 100.0
+
+joint_pd_simulator:
+  ros__parameters:
+    joint_name: joint1
+    kp: 25.0
+    kd: 7.0
+    inertia: 1.0
+    damping: 0.8
+    simulation_rate_hz: 200.0
+    effort_limit: 20.0
+    initial_position: 0.0
+    initial_velocity: 0.0
